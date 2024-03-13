@@ -36,8 +36,18 @@ if __name__ == "__main__":
 #WIDGET
 import streamlit as st
 def run():
-  st.header('Pandas Styler')
+  st.header('Widget:st.slider')
   x = st.slider('x') # 👈 este es un widget
   st.write(x, 'al cuadrado es', x * x)
 if __name__ == "__main__":
     run()
+
+
+import streamlit as st
+def run():
+  st.header('widgets a través de una clave')
+  st.text_input("Your name", key="name")
+  # You can access the value at any point with:
+  st.session_state.name
+if __name__ == "__main__":
+    run()  
