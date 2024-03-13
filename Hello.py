@@ -41,6 +41,26 @@ def run():
     st.subheader('Este es un subencabezado')
     st.text('Aqui va mi texto')
     st.markdown('Streamlit es **realmente cool**.')
+    st.markdown('Hola, **_mundo_** :sunglasses')
+    st.latex(r'''
+        a + ar + a r^2 + a r^3 + \cdots + a          r^{n-1} =
+        \sum_{k=0}^{n-1} ar^k =
+        a \left(\frac{1-r^{n}}{1-r}\right)
+        ''')
 
+    st.write(data_frame)#: muestra el conjunto de datos como una tabla.
+    st.write(error)#: imprime una excepción especialmente.
+    st.write(func)#: muestra información sobre una función.
+    st.write(module)#: muestra información sobre el módulo.
+    st.write(dict)#: muestra el diccionario en un widget interactivo.
+    st.write(mpl_fig)#: muestra una figura de la librería Matplotlib.
+    st.write(altair)#: muestra un gráfico de la librería Altair.
+    st.write(keras)#: muestra un modelo de Keras.
+    st.write(graphviz)#: muestra un gráfico de la librería Graphviz.
+    st.write(plotly_fig)#: muestra un gráfico de la librería Plotly.
+    st.write(bokeh_fig)#: muestra un gráfico de la librería Bokeh.
+    st.write(sympy_expr)#: despliega la expresión SymPy usando LaTeX.
+    st.write(htmlable)#: despliega _repr_html_ () para el objeto si está disponible.
+    st.write(obj)#: despliega una cadena objeto si se desconoce lo contrario.
 if __name__ == "__main__":
     run()
