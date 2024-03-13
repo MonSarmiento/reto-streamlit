@@ -42,7 +42,7 @@ def run():
 if __name__ == "__main__":
     run()
 
-
+#WIDGET CON CLAVE
 import streamlit as st
 def run():
   st.header('widgets a través de una clave')
@@ -50,5 +50,22 @@ def run():
   # You can access the value at any point with:
   st.header('Hola:')
   st.session_state.name
+if __name__ == "__main__":
+    run()  
+
+#BARRA IZQUIERDA
+import streamlit as st
+def run():
+  st.header('st.sidebar')
+  # Add a selectbox to the sidebar:
+  add_selectbox = st.sidebar.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone')
+  )
+  # Add a slider to the sidebar:
+  add_slider = st.sidebar.slider(
+    'Select a range of values',
+    0.0, 100.0, (25.0, 75.0)
+  )
 if __name__ == "__main__":
     run()  
