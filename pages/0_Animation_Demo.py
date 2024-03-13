@@ -1,4 +1,3 @@
-#QUITAR UN # A PARTIR DE LA LINEA DE ABAJO, APLICA PARA TODAS LAS LINEAS YA QUE SE LE COLOCO UNO ADICIONAL A LOS COMENTARIOS
 #from typing import Any
 
 #import numpy as np
@@ -11,8 +10,8 @@
 
     ## Interactive Streamlit elements, like these sliders, return their value.
     ## This gives you an extremely simple interaction model.
-    iterations = st.sidebar.slider("Level of detail", 2, 20, 10, 1)
-    separation = st.sidebar.slider("Separation", 0.7, 2.0, 0.7885)
+    #iterations = st.sidebar.slider("Level of detail", 2, 20, 10, 1)
+    #separation = st.sidebar.slider("Separation", 0.7, 2.0, 0.7885)
 
     ## Non-interactive elements return a placeholder to their location
     ## in the app. Here we're storing progress_bar to update it later.
