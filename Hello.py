@@ -48,5 +48,5 @@ def run():
         a \left(\frac{1-r^{n}}{1-r}\right)
         ''')
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     run()
