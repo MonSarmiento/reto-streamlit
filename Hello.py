@@ -31,11 +31,11 @@ def run():
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
     """,
     )
-    df = pd.DataFrame({'col1': [1,2,3]})
-    df # <-- Despliega el conjunto de datos
+df = pd.DataFrame({'col1': [1,2,3]})
+df # <-- Despliega el conjunto de datos
  
-    x = 10
-    'x', x # <-- Escribe el carácter ‘x’ y luego el valor de x
+x = 10
+'x', x # <-- Escribe el carácter ‘x’ y luego el valor de x
 
 if __name__ == "__main__":
     run()
