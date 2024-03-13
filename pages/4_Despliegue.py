@@ -38,6 +38,6 @@ import streamlit as st
 def run():
   st.header('Pandas Styler')
   x = st.slider('x') # 👈 este es un widget
-st.write(x, 'al cuadrado es', x * x)
+  st.write(x, 'al cuadrado es', x * x)
 if __name__ == "__main__":
     run()
