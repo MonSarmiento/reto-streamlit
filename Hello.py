@@ -36,6 +36,11 @@ def run():
     df # <-- Despliega el conjunto de datos
     x = 10
     'x', x # <-- Escribe el carácter ‘x’ y luego el valor de x
+    st.title('Este es el título')
+    st.header('Este es un encabezado')
+    st.subheader('Este es un subencabezado')
+    st.text('Aqui va mi texto')
+    st.markdown('Streamlit es **realmente cool**.')
 
 if __name__ == "__main__":
     run()
