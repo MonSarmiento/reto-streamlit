@@ -18,7 +18,7 @@ def animation_demo() -> None:
     progress_bar = st.sidebar.progress(0)
 
     # These two elements will be filled in later, so we create a placeholder
-    for them using st.empty()
+    #for them using st.empty()
     frame_text = st.sidebar.empty()
     image = st.empty()
 
