@@ -15,7 +15,7 @@
 
     ## Non-interactive elements return a placeholder to their location
     ## in the app. Here we're storing progress_bar to update it later.
-    progress_bar = st.sidebar.progress(0)
+    #progress_bar = st.sidebar.progress(0)
 
     ## These two elements will be filled in later, so we create a placeholder
     # for them using st.empty()
