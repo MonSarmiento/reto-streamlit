@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit.logger import get_logger
+import pandas as pd
 
 LOGGER = get_logger(__name__)
 
@@ -31,11 +32,10 @@ def run():
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
     """,
     )
-df = pd.DataFrame({'col1': [1,2,3]})
-df # <-- Despliega el conjunto de datos
- 
-x = 10
-'x', x # <-- Escribe el carácter ‘x’ y luego el valor de x
+    df = pd.DataFrame({'col1': [1,2,3]})
+    df # <-- Despliega el conjunto de datos
+    x = 10
+    'x', x # <-- Escribe el carácter ‘x’ y luego el valor de x
 
 if __name__ == "__main__":
     run()
