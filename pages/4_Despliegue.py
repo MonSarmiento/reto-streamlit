@@ -7,4 +7,6 @@ LOGGER = get_logger(__name__)
 def run():
   dataframe = np.random.randn(10, 20)
   st.dataframe(dataframe)
+if __name__ == "__main__":
+    run()
   
