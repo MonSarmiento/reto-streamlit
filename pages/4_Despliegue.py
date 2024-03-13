@@ -48,6 +48,7 @@ def run():
   st.header('widgets a través de una clave')
   st.text_input("Your name", key="name")
   # You can access the value at any point with:
+  st.header('Hola:')
   st.session_state.name
 if __name__ == "__main__":
     run()  
