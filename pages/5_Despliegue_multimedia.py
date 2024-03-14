@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 #def run():
-  image = Image.open('pages/oso_panda.jpg')
+  image = Image.open("/mount/src/reto-streamlit/pages/oso_panda.jpg")
   st.image(image, caption='Oso panda en la montaña')
 #if __name__ == "__main__":
   run()
