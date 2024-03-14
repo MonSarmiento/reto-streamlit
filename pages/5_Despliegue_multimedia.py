@@ -31,6 +31,6 @@ if __name__ == "__main__":
 
 #VIDEO
 def run():
-  st.video('https://www.youtube.com/watch?v=Aq-oecPyPRA',star_time=2)
+  st.video('https://www.youtube.com/watch?v=Aq-oecPyPRA,width=300)
 if __name__ == "__main__":
   run()
