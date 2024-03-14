@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
 #AUDIO
 def run():
-  st.audio('/mount/src/reto-streamlit/pages/audio.mp3',)
+  st.audio('/mount/src/reto-streamlit/pages/audio.mp3',format='audio/mp3')
   st.caption('Beethoven')
 if __name__ == "__main__":
   run()
