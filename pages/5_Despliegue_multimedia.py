@@ -27,3 +27,10 @@ def run():
   st.audio(audio_bytes, format='audio/ogg')
 if __name__ == "__main__":
   run()
+
+
+#VIDEO
+def run():
+  st.video("https://www.youtube.com/watch?v=Aq-oecPyPRA",format="video/mp4",star_time=0)
+if __name__ == "__main__":
+  run()
