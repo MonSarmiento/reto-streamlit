@@ -22,9 +22,8 @@ if __name__ == "__main__":
 
 #AUDIO
 def run():
-  #audio_file = open('myaudio.ogg', 'rb')
-  #audio_bytes = audio_file.read()
-  st.audio('/mount/src/reto-streamlit/pages/audio.mp3')
+  st.audio('/mount/src/reto-streamlit/pages/audio.mp3',)
+  st.caption('Beethoven')
 if __name__ == "__main__":
   run()
 
