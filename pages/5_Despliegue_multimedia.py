@@ -24,7 +24,7 @@ if __name__ == "__main__":
 def run():
   #audio_file = open('myaudio.ogg', 'rb')
   #audio_bytes = audio_file.read()
-  st.audio('https://music.amazon.com.mx/albums/B00F99E7FG?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_4MJTFyMCIDEUO044SAQgjzv6w&trackAsin=B00F99EAP8')
+  st.audio('/mount/src/reto-streamlit/pages/audio.mp3')
 if __name__ == "__main__":
   run()
 
