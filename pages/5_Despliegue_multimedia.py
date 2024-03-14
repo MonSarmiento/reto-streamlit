@@ -21,12 +21,12 @@ if __name__ == "__main__":
   run()
 
 #AUDIO
-def run():
-  audio_file = open('myaudio.ogg', 'rb')
-  audio_bytes = audio_file.read()
-  st.audio(audio_bytes, format='audio/ogg')
-if __name__ == "__main__":
-  run()
+#def run():
+  #audio_file = open('myaudio.ogg', 'rb')
+  #audio_bytes = audio_file.read()
+  #st.audio(audio_bytes, format='audio/ogg')
+#if __name__ == "__main__":
+  #run()
 
 
 #VIDEO
