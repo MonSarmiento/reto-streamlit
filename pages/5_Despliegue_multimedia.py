@@ -10,6 +10,16 @@ def run():
 if __name__ == "__main__":
   run()
 
+#2 IMAGENES
+def run():
+  st.header('2 IMAGENES')
+  image1 = Image.open('/mount/src/reto-streamlit/pages/oso_panda.jpg')
+  image2 = Image.open('/mount/src/reto-streamlit/pages/descarga.png')
+  st.image([image1,image2], caption=['Oso panda en la montaña', 'equipo de trabajo'],width=300)
+  #funcion para animacion
+if __name__ == "__main__":
+  run()
+
 #AUDIO
 def run():
   audio_file = open('myaudio.ogg', 'rb')
