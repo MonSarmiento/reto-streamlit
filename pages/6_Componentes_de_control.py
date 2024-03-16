@@ -30,6 +30,4 @@ fare_select = optionals.slider(
 subset_fare = titanic_data[(titanic_data['Fare'] >= fare_select)]
 #st.write ayuda a plasmar las barras deslizantes en la aplicación web. Se debe anteponer la letra “f” al título que aparecerá debajo del control deslizante.
 st.write(f"Number of Records With this Fare {fare_select}: {subset_fare.shape[0]}")
-
-
-#st.dataframe(subset_fare)
+st.dataframe(subset_fare)
