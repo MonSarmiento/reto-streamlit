@@ -16,8 +16,8 @@ def list_datasets():
 
     return vega_datasets.data.list_datasets()
 #ALTAIR
-#from vega_datasets import datasets as vega_data
-#import pandas as pd
-#movie_df = pd.read_json(vega_data.movies.url)
+from vega_datasets import datasets as vega_data
+import pandas as pd
+movie_df = pd.read_json(vega_data.movies.url)
 
 
