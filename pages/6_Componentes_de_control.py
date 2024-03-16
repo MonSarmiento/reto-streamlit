@@ -19,7 +19,7 @@ st.write(f"Selected Option: {selected_sex!r}")
 #SLIDERS
 st.header('SLIDER')
 # variable que contendrá el expansor
-optionals = st.beta_expander("Optional Configurations", True)
+optionals = sidebar.expander("Optional Configurations", True)
 #variable que contendrá el valor seleccionado en el control deslizante
 fare_select = optionals.slider(
     "Select the Fare",
@@ -28,5 +28,8 @@ fare_select = optionals.slider(
 )
 # “subset_fare”: variable que contendrá el conjunto de datos máximos y mínimos de los datos que se utilizarán para generar los controles deslizantes
 subset_fare = titanic_data[(titanic_data['Fare'] >= fare_select)]
-#st.write ayuda a plasmar las barras deslizantes en la aplicación web
+#st.write ayuda a plasmar las barras deslizantes en la aplicación web. Se debe anteponer la letra “f” al título que aparecerá debajo del control deslizante.
 st.write(f"Number of Records With this Fare {fare_select}: {subset_fare.shape[0]}")
+
+
+#st.dataframe(subset_fare)
