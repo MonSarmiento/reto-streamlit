@@ -18,6 +18,8 @@ st.write(f"Selected Option: {selected_sex!r}")
 
 #SLIDERS
 st.header('SLIDER')
+# Creamos sidebar
+sidebar = st.sidebar
 # variable que contendrá el expansor
 optionals = sidebar.expander("Optional Configurations", True)
 #variable que contendrá el valor seleccionado en el control deslizante
