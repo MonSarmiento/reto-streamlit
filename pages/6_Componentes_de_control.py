@@ -5,7 +5,7 @@ import streamlit as st
 #def run():
 titanic_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/titanic.csv'
 titanic_data = pd.read_csv(titanic_link)
-selected_class = st.radio("Select Class", titanic_data['class'].unique())
+selected_class = st.radio("Select Class", titanic_data['Pclass'].unique())
 st.write("Select Class:",selected_class)
 #if __name__ == "__main__":
   #run()
