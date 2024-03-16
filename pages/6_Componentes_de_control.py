@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 #def run():
-titanic_link = 'https://github.com/MonSarmiento/reto-streamlit/blob/main/pages/titanic.csv'
+titanic_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/titanic.csv'
 titanic_data = pd.read_csv(titanic_link)
 selected_class = st.radio("Select Class", titanic_data['class'].unique())
 st.write("Select Class:",selected_class)
