@@ -23,8 +23,8 @@ optionals = st.beta_expander("Optional Configurations", True)
 #variable que contendrá el valor seleccionado en el control deslizante
 fare_select = optionals.slider(
     "Select the Fare",
-    min_value=float(titanic_data['fare'].min()),
-    max_value=float(titanic_data['fare'].max())
+    min_value=float(titanic_data['Fare'].min()),
+    max_value=float(titanic_data['Fare'].max())
 )
 # “subset_fare”: variable que contendrá el conjunto de datos máximos y mínimos de los datos que se utilizarán para generar los controles deslizantes
 subset_fare = titanic_data[(titanic_data['Fare'] >= fare_select)]
