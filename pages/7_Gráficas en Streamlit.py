@@ -1,5 +1,5 @@
 #import streamlit as st
-
+from altair.utils.deprecation import deprecated
 #ALTAIR
 from vega_datasets import datasets as vega_data
 import pandas as pd
