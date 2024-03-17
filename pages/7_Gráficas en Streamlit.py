@@ -140,13 +140,3 @@ p.hbar(y=[1, 2, 3], height=0.5, left=0,
 
 show(p)
 
-
-###PLOTLY
-st.write("PLOTLY")
-import pandas as pd
-import plotly.express as px
-
-df =pd.read_csv("https://raw.githubusercontent.com/jeaggo/datasets/master/Superstore.csv")
-fig = px.scatter(df, x="Order Date", y="Sales", color="Category",                   
-                 size="Discount", hover_data=['Profit'])
-fig.show()
