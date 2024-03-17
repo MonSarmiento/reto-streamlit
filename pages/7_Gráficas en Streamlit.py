@@ -94,3 +94,41 @@ p.circle(x='Production Budget', y='Worldwide Gross',
          source=source,
          size=10, color='green')
 
+##otro ejemplo
+#column datasource.py
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.models.tools import HoverTool
+
+output_file('columndatasource_example.html')
+
+movies_link = 'https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json'
+df = pd.read_json(movies_link)
+
+sample = df.sample(100)
+source = ColumnDataSource(sample)
+
+p = bokeh.plotting.figure(
+    width=400,
+    height=300,
+    x_axis_label="Production Budget",
+    y_axis_label="Worldwide Gross",
+)
+p.title.text = 'Movies'
+p.circle(x='Production Budget', y='Worldwide Gross',
+         source=source,
+         size=10, color='orange')
+
+hover = HoverTool() 
+hover.tooltips=[
+    ('Title', '@Title'), 
+    ('Director', '@Director'), 
+    ('Distributor', '@Distributor'),
+    ('Production Budget', '@Production Budget')
+]
+p.add_tools(hover) 
+
+
+
+bokeh.io.show(p)
