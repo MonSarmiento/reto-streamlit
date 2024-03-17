@@ -33,4 +33,3 @@ alt.Chart(movie_2000).mark_point().encode(
      alt.X('Production Budget'),
      alt.Y('Worldwide Gross')
 )
-
