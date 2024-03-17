@@ -34,7 +34,6 @@ alt.Chart(movie_2000).mark_point().encode(
      alt.Y('Worldwide Gross')
 )
 
-#tamaño de los puntos
 alt.Chart(movie_2000).mark_point(filled=True).encode(
     alt.X('Production Budget'),
     alt.Y('Worldwide Gross'),
@@ -67,3 +66,7 @@ alt.Chart(movie_2000).mark_point(filled=True).encode(
 #BOKEH
 
 from bokeh.plotting import figure, output_file, show
+#mi_primer_grafico.py 
+from bokeh.plotting import figure, output_file, show
+#tamaño de los puntos
+output_file('my_first_graph.html')
