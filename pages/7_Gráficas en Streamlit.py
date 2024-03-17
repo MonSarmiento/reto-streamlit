@@ -8,7 +8,7 @@ def run():
   titanic_data = pd.read_csv(titanic_link)
   df_edad = titanic_data[titanic_data["Age"] >= 30]
   #df_edad.shape
-  alt.Chart(df_edad)
+  alt.Chart(titanic_data)
   #alt.Chart(df_edad).mark_point()
 
 if __name__ == "__main__":
