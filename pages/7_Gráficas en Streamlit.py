@@ -20,7 +20,6 @@ movie_df.columns
 Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales', 
        'Production_Budget', 'Release_Date','MPAA_Rating', 'Running_Time_min', 
        'Distributor', 'Source', 'Major_Genre','Creative_Type','Director', 
-       'Rotten_Tomatoes_Rating', 'IMDB_Rating','IMDB_Votes'], 
-      dtype='object') 
+       'Rotten_Tomatoes_Rating', 'IMDB_Rating','IMDB_Votes'], dtype='object') 
 
 
