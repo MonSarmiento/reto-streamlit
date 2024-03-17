@@ -24,4 +24,9 @@ def extract_year(value):
 
 movie_df['Year'] = movie_df["Release Date"].apply(extract_year)
 movie_df
-#alt.Chart(movie_df)
+
+#grafica de relacion
+alt.Chart(movie_2000).mark_point().encode(
+     alt.X('Production Budget'),
+     alt.Y('Worldwide Gross')
+)
