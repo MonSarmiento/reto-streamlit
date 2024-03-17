@@ -76,7 +76,7 @@ ptriangle(y, x, color='gold', size=10, legend='triangle')
 
 #En el siguiente código se establece tamaño, color y nombre de leyenda para cada glifo
 p.legend.click_policy='hide'
-show(p)
+#show(p)
 
 import pandas as pd
 from bokeh.plotting import figure, output_file, show
