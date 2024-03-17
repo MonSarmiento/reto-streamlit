@@ -12,7 +12,7 @@ movie_df = pd.read_json(movies_link)
 movie_df.shape
 
 #ejecutando la siguiente  instrucción se podrán visualizar las primeras 5 filas del dataframe
-movie_df.head
+movie_df
 
 #columnas del dataframe
 movie_df.columns
