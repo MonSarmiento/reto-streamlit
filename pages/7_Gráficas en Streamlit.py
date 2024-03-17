@@ -25,6 +25,7 @@ Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales',
 #se usará la función to_datetime dentro de Pandas para convertir la columna Release_Date en una fecha real y luego extraer el valor del 'año'
 def extract_year(value):
     return pd.to_datetime(value, format='%b %d %Y').year
+
  movie_df["Year"] = movie_df["Release_Date"].apply(extract_year)
 
 
