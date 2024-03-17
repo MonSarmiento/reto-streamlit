@@ -23,4 +23,4 @@ movie_df.columns
 
 #movie_df["Year"] = pd.to_datetime(movie_df['Release Date'],format='%b %d %Y').year
 
-alt.Chart(DataFrame)
+alt.Chart(movie_df)
