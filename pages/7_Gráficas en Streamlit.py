@@ -29,7 +29,6 @@ movie_2000 = movie_df[movie_df["Year"] == 2000]
 movie_2000
 
 #grafica de relacion
-import altair as alt
 alt.Chart(movie_2000).mark_point().encode(
      alt.X('Production Budget'),
      alt.Y('Worldwide Gross')
