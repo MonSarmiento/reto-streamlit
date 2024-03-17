@@ -4,11 +4,7 @@ import streamlit as st
 
 #ALTAIR
 
-titanic_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/titanic.csv'
-titanic_data = pd.read_csv(titanic_link)
-df_edad = titanic_data[titanic_data["Age"] >= 30]
-df_edad.shape
-alt.Chart(df_edad).mark_point().encode(
-  alt.X('Age'),
-  alt.Y('Pclass')
-)
+movies_link = 'https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json'
+movie_df = pd.read_json(movies_link)
+#Con la siguiente instrucción, podrás ver que movie_df es en realidad un dataframe de Pandas que tiene 3201 películas (filas) con 16 características de información (columnas) cada una
+movie_df.shape
