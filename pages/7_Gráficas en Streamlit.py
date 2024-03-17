@@ -21,6 +21,6 @@ movie_df.columns
 def extract_year(value):
        return pd.to_datetime(value, format='%b %d %Y').year
 
-movie_df["Year"] = pd.to_datetime(movie_df['Release Date'],format='%b %d %Y').year
+movie_df["Year"] = movie_df["Release_Date"].apply(extract_year)
 movie_df.shape
 #alt.Chart(movie_df)
