@@ -25,6 +25,10 @@ def extract_year(value):
 movie_df['Year'] = movie_df["Release Date"].apply(extract_year)
 movie_df
 
+#dataframe de peliculas del 2000
+movie_2000 = movie_df[movie_df["Year"] == 2000]
+movie_2000.shape
+
 #grafica de relacion
 alt.Chart(movie_2000).mark_point().encode(
      alt.X('Production Budget'),
