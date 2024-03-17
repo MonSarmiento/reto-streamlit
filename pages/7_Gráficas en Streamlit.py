@@ -33,3 +33,33 @@ alt.Chart(movie_2000).mark_point().encode(
      alt.X('Production Budget'),
      alt.Y('Worldwide Gross')
 )
+
+#tamaño de los puntos
+alt.Chart(movie_2000).mark_point(filled=True).encode(
+    alt.X('Production Budget'),
+    alt.Y('Worldwide Gross'),
+    alt.Size('US Gross')
+)
+
+#opacidad
+alt.Chart(movie_2000).mark_point(filled=True).encode(
+    alt.X('Production Budget'),
+    alt.Y('Worldwide Gross'),
+    alt.Size('US Gross'),
+    alt.Color('Major Genre'),
+    alt.OpacityValue(0.7)
+)
+
+#Para poder movernos por el gráfico y ver los detalles de las película que están representadas en cada circulo se emplea la herramienta Tooltip
+alt.Chart(movie_2000).mark_point(filled=True).encode(
+    alt.X('Production Budget'),
+    alt.Y('Worldwide Gross'),
+    alt.Size('US Gross'),
+    alt.Color('Major Genre'),
+    alt.OpacityValue(0.7),
+    tooltip = [alt.Tooltip('Title'),
+               alt.Tooltip('Production Budget'),
+               alt.Tooltip('Worldwide Gross'),
+               alt.Tooltip('US Gross')
+              ]
+)
