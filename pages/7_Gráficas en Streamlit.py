@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 
 #ALTAIR
-
+st.write("ALTAIR")
 movies_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/movies.csv'
 movie_df = pd.read_csv(movies_link)
 
