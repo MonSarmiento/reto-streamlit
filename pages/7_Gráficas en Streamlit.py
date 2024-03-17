@@ -4,6 +4,6 @@ import pandas as pd
 #ALTAIR
 titanic_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/titanic.csv'
 titanic_data = pd.read_csv(titanic_link)
-df_edad = titanic_data[titanic_data["Age"] == 30]
+df_edad = titanic_data[titanic_data["Age"] >= 30]
 alt.Chart(df_edad).mark_point()
 
