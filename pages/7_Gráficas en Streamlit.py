@@ -85,7 +85,7 @@ from bokeh.models.tools import HoverTool
 
 output_file('columndatasource_example.html')
 
-df=pd.read_csv('thor_wwii.csv')
+df=pd.read_csv('https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/thor_wwii.csv')
 sample = df.sample(50)
 source = ColumnDataSource(sample)
 p = figure()
