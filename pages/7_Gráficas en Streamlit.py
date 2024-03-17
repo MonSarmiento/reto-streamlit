@@ -86,11 +86,11 @@ from bokeh.models.tools import HoverTool
 
 output_file('columndatasource_example.html')
 
-df=pd.read_csv('https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/thor_wwii.csv')
+df=movie_2000
 sample = df.sample(50)
 source = ColumnDataSource(sample)
 p = figure()
-p.circle(x='TOTAL_TONS', y='AC_ATTACKING',
+p.circle(x='Production Budget', y='Worldwide Gross',
          source=source,
          size=10, color='green')
 
