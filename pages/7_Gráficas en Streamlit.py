@@ -63,3 +63,7 @@ alt.Chart(movie_2000).mark_point(filled=True).encode(
                alt.Tooltip('US Gross')
               ]
 )
+
+#BOKEH
+
+from bokeh.plotting import figure, output_file, show
