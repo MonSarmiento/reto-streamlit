@@ -63,9 +63,9 @@ alt.Chart(movie_2000).mark_point(filled=True).encode(
               ]
 )
 
-#BOKEH
+##BOKEH
 
-st.write("ALTAIR")
+st.write("BOKEH")
 #mi_primer_grafico.py 
 #from bokeh.plotting import figure, output_file, show
 #output_file('my_first_graph.html')
@@ -139,3 +139,14 @@ p.hbar(y=[1, 2, 3], height=0.5, left=0,
        right=[1.2, 2.5, 3.7], color="navy")
 
 show(p)
+
+
+###PLOTLY
+st.write("PLOTLY")
+import pandas as pd
+import plotly.express as px
+
+df =pd.read_csv("https://raw.githubusercontent.com/jeaggo/datasets/master/Superstore.csv")
+fig = px.scatter(df, x="Order Date", y="Sales", color="Category",                   
+                 size="Discount", hover_data=['Profit'])
+fig.show()
