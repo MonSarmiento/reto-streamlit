@@ -15,7 +15,7 @@ movie_df.shape
 movie_df.head(5)
 
 #columnas del dataframe
-movie_df.columns
+#movie_df.columns
 
 #se usará la función to_datetime dentro de Pandas para convertir la columna Release_Date en una fecha real y luego extraer el valor del 'año'
 def extract_year(value):
