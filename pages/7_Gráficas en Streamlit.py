@@ -66,16 +66,16 @@ alt.Chart(movie_2000).mark_point(filled=True).encode(
 #BOKEH
 
 #mi_primer_grafico.py 
-from bokeh.plotting import figure, output_file, show
-output_file('my_first_graph.html')
+#from bokeh.plotting import figure, output_file, show
+#output_file('my_first_graph.html')
 
-p = figure()
-p.circle(x, y, size=10, color='red', legend='circle')
-p.line(x, y, color='blue', legend='line')
-ptriangle(y, x, color='gold', size=10, legend='triangle')
+#p = figure()
+#p.circle(x, y, size=10, color='red', legend='circle')
+#p.line(x, y, color='blue', legend='line')
+#ptriangle(y, x, color='gold', size=10, legend='triangle')
 
 #En el siguiente código se establece tamaño, color y nombre de leyenda para cada glifo
-p.legend.click_policy='hide'
+#p.legend.click_policy='hide'
 #show(p)
 
 #otro ejemplo para visualizar
