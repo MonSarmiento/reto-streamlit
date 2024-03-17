@@ -78,6 +78,7 @@ ptriangle(y, x, color='gold', size=10, legend='triangle')
 p.legend.click_policy='hide'
 #show(p)
 
+#otro ejemplo para visualizar
 import pandas as pd
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import ColumnDataSource
