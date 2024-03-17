@@ -5,7 +5,7 @@ import numpy as np
 
 #ALTAIR
 
-movies_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/main/pages/movies.csv'
+movies_link = 'https://raw.githubusercontent.com/MonSarmiento/reto-streamlit/blob/main/pages/movies.csv'
 movie_df = pd.read_csv(movies_link)
 
 #Con la siguiente instrucción, podrás ver que movie_df es en realidad un dataframe de Pandas que tiene 3201 películas (filas) con 16 características de información (columnas) cada una
