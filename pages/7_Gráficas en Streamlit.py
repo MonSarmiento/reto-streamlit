@@ -38,7 +38,7 @@ import altair as alt
 
 # load a simple dataset as a pandas DataFrame
 
-alt.Chart(cars).mark_point().encode(
+alt.Chart(movie_2000).mark_point().encode(
     x='Production Budget',
     y='Worldwide Gross',
     color='Origin',
