@@ -17,7 +17,7 @@ movie_df.head(5)
 #columnas del dataframe
 movie_df.columns
 
-Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales', 
+#Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales', 
        'Production_Budget', 'Release_Date','MPAA_Rating', 'Running_Time_min', 
        'Distributor', 'Source', 'Major_Genre','Creative_Type','Director', 
        'Rotten_Tomatoes_Rating', 'IMDB_Rating','IMDB_Votes'], 
@@ -29,3 +29,4 @@ def extract_year(value):
 
 movie_df["Year"] = movie_df["Release_Date"].apply(extract_year)
 
+#movie_df.columns
