@@ -27,7 +27,7 @@ movie_df
 
 #dataframe de peliculas del 2000
 movie_2000 = movie_df[movie_df["Year"] == 2000]
-movie_2000.shape
+movie_2000
 
 #grafica de relacion
 alt.Chart(movie_2000).mark_point().encode(
