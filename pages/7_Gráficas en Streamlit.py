@@ -65,6 +65,7 @@ alt.Chart(movie_2000).mark_point(filled=True).encode(
 
 #BOKEH
 
+st.write("ALTAIR")
 #mi_primer_grafico.py 
 #from bokeh.plotting import figure, output_file, show
 #output_file('my_first_graph.html')
