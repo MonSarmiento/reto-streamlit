@@ -31,6 +31,6 @@ movie_2000.shape
 
 #grafica de relacion
 alt.Chart(movie_2000).mark_point().encode(
-     alt.X('Production Budget'),
-     alt.Y('Worldwide Gross')
+     alt.X("Production Budget"),
+     alt.Y("Worldwide Gross")
 )
