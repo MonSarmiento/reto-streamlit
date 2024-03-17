@@ -10,5 +10,5 @@ df_edad = titanic_data[titanic_data["Age"] >= 30]
 df_edad.shape
 alt.Chart(titanic_data).mark_point().encode(
   alt.X('Age'),
-  alt.Y('Worldwide_Gross')
+  alt.Y('Pclass')
 )
