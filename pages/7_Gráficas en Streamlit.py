@@ -17,15 +17,15 @@ movie_df.head(5)
 #columnas del dataframe
 movie_df.columns
 
-Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales', 
-       'Production_Budget', 'Release_Date','MPAA_Rating', 'Running_Time_min', 
-       'Distributor', 'Source', 'Major_Genre','Creative_Type','Director', 
-       'Rotten_Tomatoes_Rating', 'IMDB_Rating','IMDB_Votes'],dtype='object')
+Index(['Title', 'US Gross', 'Worldwide Gross','US DVD Sales', 
+       'Production Budget', 'Release Date','MPAA Rating', 'Running Time_min', 
+       'Distributor', 'Source', 'Major Genre','Creative Type','Director', 
+       'Rotten Tomatoes Rating', 'IMDB Rating','IMDB Votes'],dtype='object')
 
 #se usará la función to_datetime dentro de Pandas para convertir la columna Release_Date en una fecha real y luego extraer el valor del 'año'
 def extract_year(value):
        return pd.to_datetime(value, format='%b %d %Y').year
 
-movie_df["Year"] = movie_df["Release_Date"].apply(extract_year)
+movie_df["Year"] = movie_df["Release Date"].apply(extract_year)
 
 movie_df.columns
