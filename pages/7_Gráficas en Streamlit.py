@@ -14,6 +14,13 @@ movie_df.shape
 #ejecutando la siguiente  instrucción se podrán visualizar las primeras 5 filas del dataframe
 movie_df.head(5)
 
+#columnas del dataframe
 movie_df.columns
+#solo conservamos la que nos interesan
+Index(['Title', 'US_Gross', 'Worldwide_Gross','US_DVD_Sales', 
+       'Production_Budget', 'Release_Date','MPAA_Rating', 'Running_Time_min', 
+       'Distributor', 'Source', 'Major_Genre','Creative_Type','Director', 
+       'Rotten_Tomatoes_Rating', 'IMDB_Rating','IMDB_Votes'], 
+      dtype='object') 
 
 
