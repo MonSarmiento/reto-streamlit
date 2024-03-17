@@ -29,14 +29,7 @@ movie_2000 = movie_df[movie_df["Year"] == 2000]
 movie_2000
 
 #grafica de relacion
-
-chart = (
-       alt.Chart(movie_2000)
-       #.mark_area(opacity=0.3)
-       .encode(
-              x="Production Budget:T",
-              y=alt.Y("Worldwide Gross:Q", stack=None),
-              #color="Region:N",
-       )
+alt.Chart(movie_2000).mark_point().encode(
+     alt.X('Production Budget'),
+     alt.Y('Worldwide Gross')
 )
-st.altair_chart(chart, use_container_width=True)
