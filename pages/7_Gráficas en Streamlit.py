@@ -29,7 +29,9 @@ movie_2000 = movie_df[movie_df["Year"] == 2000]
 movie_2000
 
 #grafica de relacion
-alt.Chart(movie_2000).mark_point().encode(
-     alt.X('Production Budget'),
-     alt.Y('Worldwide Gross')
-)
+def plotting_demo():
+       alt.Chart(movie_2000).mark_point().encode(
+              alt.X('Production Budget'),
+              alt.Y('Worldwide Gross')
+       )
+plotting_demo()
